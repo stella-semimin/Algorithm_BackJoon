@@ -1,4 +1,4 @@
-package BackJoon;
+package Backjoon;
 import java.util.Scanner;
 public class Sol10818 {
 	public static void main(String[] args) {
