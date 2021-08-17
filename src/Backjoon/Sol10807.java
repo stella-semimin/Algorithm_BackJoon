@@ -16,9 +16,9 @@ public class Sol10807 {
 		 */
 		Scanner scan = new Scanner(System.in);
 		int N = scan.nextInt();				// ※ 입력받을 숫자의 개수를 입력받지않아서 수정
-		int numbers[] = new int[N]; 	//  n개의 정수 입력받기(공백으로 구분되어있어서 String형으로 받음)
+		int numbers[] = new int[N]; 	//  n개의 정수 입력받을 공간생성
 		for(int i = 0 ; i < N; i++) {
-			numbers[i]= scan.nextInt();
+			numbers[i]= scan.nextInt();	// n개의 정수 입력받기
 		}
 		
 		int v = scan.nextInt(); // 찾으려고하는 정수v
