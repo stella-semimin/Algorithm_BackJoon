@@ -15,26 +15,23 @@ public class Sol10807 {
 		 * 출력 : 첫째 줄에 입력으로 주어진 N개의 정수 중에 v가 몇 개인지 출력한다.
 		 */
 		Scanner scan = new Scanner(System.in);
-		String n = scan.nextLine(); //  n개의 정수 입력받기(공백으로 구분되어있어서 String형으로 받음)
-		String num[] = n.split(" "); // 공백으로 구분된 숫자를 나눠서 저장하기
+		int N = scan.nextInt();				// ※ 입력받을 숫자의 개수를 입력받지않아서 수정
+		int numbers[] = new int[N]; 	//  n개의 정수 입력받기(공백으로 구분되어있어서 String형으로 받음)
+		for(int i = 0 ; i < N; i++) {
+			numbers[i]= scan.nextInt();
+		}
+		
 		int v = scan.nextInt(); // 찾으려고하는 정수v
 		int cnt = 0;
 		
-		
-		// 문자열배열을 정수형 배열로 변환
-		int[] nums = new int[num.length]; // 배열 저장할 길이 선언
-		for(int i = 0; i<num.length; i++) {
-			nums[i] = Integer.parseInt(num[i]);
-		}
-		
-		// 입력된 n개의 정수 중 v와 동일한 것의 숫자 세기
-		for(int i=0; i<nums.length; i++) {
-			if(nums[i]==v) { 
+		// 입력된 N개의 정수 중 v와 동일한 것의 숫자 세기
+		for(int i=0; i<N; i++) { 
+			if(numbers[i]==v) { 
 				cnt++; 
+				} 
 			}
-		}
-		
 		 System.out.println(cnt);
+		
 	}
 
 }
