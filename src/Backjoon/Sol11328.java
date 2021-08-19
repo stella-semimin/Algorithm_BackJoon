@@ -24,7 +24,7 @@ public class Sol11328 {
 		for (int i = 0; i < num; i++) {
 			// 알파벳 넣을 공간생성
 			int alph[] = new int[26];
-			// 문자열 입력받고 공백으로 나눠서 저장하기
+			// 문자열 입력받기
 			char[] a = scan.next().toCharArray();
 			char[] b = scan.next().toCharArray();
 
